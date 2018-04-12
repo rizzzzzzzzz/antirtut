@@ -206,15 +206,15 @@ ul {
 }
 
 .site-btn.btn-2 {
-	background: #13007b;
+	background: #215897;
 	color: #fff;
 	font-weight: 400;
 }
 
 .site-btn.btn-3 {
 	background: transparent;
-	color: #13007b;
-	border: 1px solid #13007b;
+	color: #215897;
+	border: 1px solid #215897;
 	padding: 14px 50px;
 }
 
@@ -350,7 +350,7 @@ ul {
 }
 
 .header-section .menu-list li a.active {
-	color: #13007b;
+	color: #215897;
 }
 
 .header-section .menu-list li:last-child a {
@@ -372,7 +372,8 @@ a.stereo {
 	display: block;
 	margin: 0;
 	font: bold 28px Arial;
-	text-shadow: -3px 0 2px red, 3px 0 2px #13007b;
+	text-shadow: 2px 1px 1px red, 6px 4px 1px #215897;
+	/*text-shadow: -3px 0 2px red, 3px 0 2px #215897;*/
 	letter-spacing: 8px;
 }
 
@@ -421,7 +422,7 @@ a.stereo:hover{
 	display: inline-block;
 	height: 50px;
 	width: 100px;
-	background: #13007b;
+	background: #215897;
 	color: #fff;
 	text-align: center;
 	padding-top: 10px;
@@ -457,7 +458,7 @@ a.stereo:hover{
 	Banner section
 --------------------------*/
 .banner-section {
-	background: #13007b;
+	background: #215897;
 	position: relative;
 	z-index: 2;
     padding: 70px 0;
@@ -495,11 +496,30 @@ a.stereo:hover{
 --------------------------*/
 .about-section,
 .team-section {
-	background: #13007b;
+	/*background: #215897;*/
 	position: relative;
 	z-index: 2;
 }
-
+.about-section:after{
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	opacity: 0.8;
+	background: #ad1111;
+}
+.about-section:before{
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	background: #538c0f;
+}
 .overlay {
 	position: absolute;
 	width: 100%;
@@ -560,7 +580,7 @@ a.stereo:hover{
 	top: 50%;
 	margin-left: -30px;
 	margin-top: -30px;
-	color: #13007b;
+	color: #215897;
 	background: #e20202;
 	border-radius: 50%;
 	text-align: center;
@@ -593,7 +613,7 @@ a.stereo:hover{
 	display: block;
 	font-family: "Roboto", sans-serif;
 	font-size: 48px;
-	color: #13007b;
+	color: #215897;
 }
 
 .testimonial p {
@@ -662,7 +682,7 @@ a.stereo:hover{
 	content: "";
 	width: 28px;
 	height: 28px;
-	border: 2px solid #13007b;
+	border: 2px solid #215897;
 	border-radius: 40px;
 	left: -10px;
 	top: -10px;
@@ -675,7 +695,7 @@ a.stereo:hover{
 }
 
 #testimonial-slide .owl-dots .owl-dot.active {
-	background: #13007b;
+	background: #215897;
 	margin-bottom: 25px;
 	margin-top: 25px;
 }
@@ -831,19 +851,19 @@ a.stereo:hover{
 --------------------------*/
 .contact-section {
 	position: relative;
+	/*background: #215897;*/
 }
 
-.contact-section:after {
+/*.contact-section:after {
 	position: absolute;
 	content: "";
 	width: 50%;
 	height: 100%;
 	right: -15px;
 	top: 0;
-	background: #13007b;
 	z-index: -1;
 }
-
+*/
 .form-class input[type="text"] {
 	width: 100%;
 	margin-bottom: 26px;
@@ -901,9 +921,11 @@ a.stereo:hover{
 }
 
 .contact-info p {
-	color: #fff;
+	color: #000;
 }
-
+.contact-info .section-title h2{
+	color: #000;
+}
 .contact-info h3 {
 	font-weight: 400;
 	color: #e20202;
@@ -924,7 +946,7 @@ a.stereo:hover{
 }
 
 .footer-section h2 {
-	color: #13007b;
+	color: #215897;
 	font-size: 14px;
 	padding: 18px 0;
 }
@@ -938,8 +960,9 @@ a.stereo:hover{
 --------------------------*/
 .page-top-section {
 	position: relative;
-	height: 405px;
-	background: #13007b;
+	height: 150px;
+	background: #215897;
+	border-bottom: 2px solid #e20202;
 }
 
 .page-top-section .container {
@@ -949,7 +972,7 @@ a.stereo:hover{
 
 .page-top-section .page-info {
 	display: inline-block;
-	padding-top: 200px;
+	padding-top: 50px;
 }
 
 .page-top-section .page-info h2 {
@@ -1132,7 +1155,7 @@ a.stereo:hover{
 	position: absolute;
 	width: 90px;
 	height: 90px;
-	background: #13007b;
+	background: #215897;
 	top: 17px;
 	left: 17px;
 	text-align: center;
@@ -1158,6 +1181,18 @@ a.stereo:hover{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	margin-bottom: 18px;
+	padding-bottom: 18px;
+	position: relative;
+}
+
+.post-title:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100px;
+	height: 5px;
+	background: #e20202;
 }
 
 .post-meta {
@@ -1277,7 +1312,7 @@ a.stereo:hover{
 }
 
 .widget-item ul.tag li a {
-	color: #13007b;
+	color: #215897;
 	margin-bottom: 0;
 }
 
@@ -1313,7 +1348,7 @@ a.stereo:hover{
 	right: 0;
 	top: 0;
 	border: 0;
-	background: #13007b;
+	background: #215897;
 	color: #e20202;
 }
 
@@ -1456,7 +1491,7 @@ a.stereo:hover{
 }
 
 .site-accordions .panel-heading {
-	background: #13007b;
+	background: #215897;
 	color: #fff;
 	position: relative;
 	padding: 16px 50px;
@@ -1497,11 +1532,11 @@ a.stereo:hover{
 
 .site-accordions .panel.active .panel-heading {
 	background: #e20202;
-	color: #13007b;
+	color: #215897;
 }
 
 .site-accordions .panel.active .panel-heading a {
-	background: #13007b;
+	background: #215897;
 }
 
 .site-accordions .panel.active .panel-heading a:after {
@@ -1545,7 +1580,7 @@ a.stereo:hover{
 
 .facts .fact .icon {
 	margin-right: 20px;
-	color: #13007b;
+	color: #215897;
 	font-size: 45px;
 	padding-top: 10px;
 }
